@@ -1,0 +1,78 @@
+.container {
+    background-color: #f0f0f0;
+    padding: 15px;
+    padding-top: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    flex-direction: column;
+    align-items: center;
+    max-height: 430px;
+    overflow-y: scroll;
+}
+
+.container form {
+    margin-bottom: 20px;
+}
+
+.container button {
+    margin-top: 10px;
+}
+
+.btn {
+    margin-top: 15px;
+    margin-left: 5px;
+    border-radius: 15px;
+}
+
+.small-input {
+    width: 200px;
+    height: 75px;
+    padding-top: 3px;
+    margin: 10px
+}
+
+.tip {
+    width: 250px;
+}
+
+.death {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    margin-top: 5%;
+}
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #239fc4;
+    box-shadow: 0px 15px 20px rgba(0, 155, 245, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+.button-container {
+    background-color: rgb(226, 214, 214);
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 5px;
+    border-radius: 15px;
+}

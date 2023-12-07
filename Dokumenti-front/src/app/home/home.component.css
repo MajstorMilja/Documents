@@ -1,0 +1,86 @@
+.ContainerDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 75%;
+  background-color: rgb(158, 151, 151);
+  border: 2px solid #999999;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+  button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #239fc4;
+    box-shadow: 0px 15px 20px rgba(0, 155, 245, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
+  .button-container{
+    background-color: rgb(226, 214, 214);
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 5px;
+    border-radius: 15px;
+  } 
+.logIn p{
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: end;
+}
+
+.logIn .time-role {
+  font-size: 18px;
+  color: #333;
+}
+
+.logIn .hello-user {
+  font-size: 20px;
+  color: #555;
+}
+
+.message-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+.naslov{
+  text-align: center;
+}
+.Filtering{
+  position: absolute;
+  left: 15%;
+  top: 2%;
+  z-index: 0;
+}
+.FilterInputs{
+  margin-right: 15px;
+}

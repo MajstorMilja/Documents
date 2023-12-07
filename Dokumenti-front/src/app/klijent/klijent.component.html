@@ -1,0 +1,30 @@
+<mat-table [dataSource]="dataSource" class="custom-table">
+
+    <ng-container matColumnDef="naziv">
+        <mat-header-cell *matHeaderCellDef>naziv</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{element.naziv}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="maticniBroj">
+        <mat-header-cell *matHeaderCellDef>maticniBroj</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{element.maticniBroj}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="sediste">
+        <mat-header-cell *matHeaderCellDef>sediste</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{element.sediste }}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="poreskiIdentifikacioniBroj">
+        <mat-header-cell *matHeaderCellDef>poreskiIdentifikacioniBroj</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{element.poreskiIdentifikacioniBroj}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="brojRacuna">
+        <mat-header-cell *matHeaderCellDef>brojRacuna</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{element.brojRacuna}}</mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns" ></mat-row>
+</mat-table>

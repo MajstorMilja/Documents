@@ -1,0 +1,26 @@
+<form [formGroup]="klijent" class="forma">
+    <mat-form-field class="formField Top">
+        <mat-label>Naziv Klijenta</mat-label>
+        <input matInput type="text" formControlName="naziv">
+    </mat-form-field>
+
+    <mat-form-field class="formField">
+        <mat-label>Sediste</mat-label>
+        <input matInput type="text" formControlName="sediste">
+    </mat-form-field>
+
+    <mat-form-field class="formField">
+        <mat-label>MaticniBroj</mat-label>
+        <input matInput type="number" formControlName="maticniBroj">
+    </mat-form-field>
+
+    <mat-form-field class="formField">
+        <mat-label>PoreskiIdentifikacioniBroj</mat-label>
+        <input matInput type="number" formControlName="poreskiIdentifikacioniBroj">
+    </mat-form-field>
+
+    <mat-form-field class="formField Bottom">
+        <mat-label>BrojRacuna</mat-label>
+        <input matInput type="number" formControlName="brojRacuna">
+    </mat-form-field>
+</form>

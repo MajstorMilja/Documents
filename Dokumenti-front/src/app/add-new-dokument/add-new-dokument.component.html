@@ -1,0 +1,82 @@
+<button mat-raised-button class="btn" (click)="openNewForm()">Add StavkeDokumenta</button>
+
+
+<form [formGroup]="dokumentForm">
+    <!-- 
+    <mat-form-field class="small-input">
+        <mat-label>datum</mat-label>
+        <input matInput formControlName="datum">
+      </mat-form-field>
+
+      <mat-form-field class="small-input">
+        <mat-label>datumDospeca</mat-label>
+        <input matInput formControlName="datumDospeca">
+      </mat-form-field> -->
+    <mat-form-field>
+        <mat-label>Klijent</mat-label>
+        <mat-select matNativeControl formControlName="klijentId" (selectionChange)="hellodokumet()">
+            <mat-option *ngFor="let k of klijenti" [value]="k.klijentId">
+                {{ k.naziv }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="tip">
+        <mat-label>tipDokumenta</mat-label>
+        <mat-select matNativeControl formControlName="tipDokumentaId" (selectionChange)="hellodokumet()">
+            <mat-option *ngFor="let tip of tip" [value]="tip.tipDokumentaId">
+                {{ tip.naziv }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="small-input">
+        <mat-label>mestoDospeca</mat-label>
+        <input matInput formControlName="mestoDospeca" (input)="hellodokumet()">
+    </mat-form-field>
+
+    <mat-form-field class="small-input">
+        <mat-label>ukupnaCena</mat-label>
+        <input matInput formControlName="ukupnaCena" readonly>
+    </mat-form-field>
+
+<div class="container">
+        <div *ngFor="let form of stavkeForms; let i = index">
+            <form [formGroup]="form" class="stavke-form">
+
+                <mat-form-field>
+                    <mat-label>Proizvod</mat-label>
+                    <mat-select matNativeControl formControlName="proizvodId" (selectionChange)="helloworld(i)">
+                        <mat-option *ngFor="let proizvod of proizvodi" [value]="proizvod.proizvodId">
+                            {{ proizvod.naziv }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Kolicina</mat-label>
+                    <input matInput formControlName="kolicina" type="number" (input)="helloworld(i)"
+                        (keypress)="onKeyPress($event)">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Cena</mat-label>
+                    <input matInput formControlName="cena" (input)="helloworld(i)" (keypress)="onKeyPress($event)">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Ukupna Cena</mat-label>
+                    <input matInput formControlName="ukupnaCena" [disabled]="disabled" readonly>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Popust</mat-label>
+                    <input matInput formControlName="popust" (input)="helloworld(i)" (keypress)="onKeyPress($event)">
+                </mat-form-field>
+
+                <button mat-raised-button color="warn" (click)="removeForm(i)">Remove</button>
+            </form>
+        </div>
+</div>
+    <button mat-raised-button  (click)="submitForms()" class="death btn" [disabled]="disabled">Submit Forms</button>
+</form>

@@ -1,0 +1,177 @@
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    max-height: 600px;
+overflow: auto;
+}
+
+.custom-table mat-row:hover {
+    background-color: #eaf6fd;
+    cursor: pointer;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85vw;
+    height: 85vh;
+    padding: 10px;
+    background-color: #e1f5f2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #239fc4;
+    box-shadow: 0px 15px 20px rgba(0, 155, 245, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+.button-container {
+    background-color: rgb(226, 214, 214);
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 5px;
+    border-radius: 15px;
+}
+
+.example-card {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.matcardDiv {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
+mat-card-actions {
+    justify-content: end;
+    align-items: end;
+}
+
+.mdc-card__actions {
+    justify-content: end;
+    padding-top: 20px;
+}
+
+.mat-mdc-card-content {
+    font-weight: 405;
+}
+
+.formField {
+    width: 250px;
+    height: 15%;
+    padding: 7px;
+}
+
+.buttonactions {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.stavkeMatCard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    margin: 12px;
+    width: 61%;
+    height: fit-content;
+}
+
+/* .row-number-cell {
+    width: 50px;
+    text-align: center;
+    border-right: 1px solid black;
+} */
+.stavke-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .stavke-table th,
+  .stavke-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .stavke-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .stavke-table input[type="text"] {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .stavke-table input[type="text"]:focus {
+    outline: none;
+    background-color: #e2e2e2;
+  }
+.small-input{
+    width: 135px;
+    height: 75px;
+    padding-top: 3px;
+    padding: 5px;
+}
+
+.scrollable-content {
+    max-height: 600px;
+    overflow-y: auto;
+  }
+.addProizvod{
+    position: absolute;
+    top: 52%;
+    right: 0;
+    margin: 10px;
+  }
+.positionNewStavke{
+    position: absolute;
+    left:0;
+    top:430px;
+    margin:10px;
+    max-height: 350px;
+    overflow-y: auto;
+    padding: 16px;
+  }
+  .NumbersStavke{
+    width: 150px;
+  }
+.mat-header-cell.mat-mdc-header-cell, mat-cell.mat-mdc-cell, mat-footer-cell.mat-mdc-footer-cell{
+    padding: 10px;
+  }
+.paginacija{
+position: fixed;
+bottom: 0;
+right: 0;
+  }

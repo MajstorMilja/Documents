@@ -1,0 +1,10 @@
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .custom-table mat-row:hover {
+    background-color: #eaf6fd;
+    cursor: pointer;
+  }
+  

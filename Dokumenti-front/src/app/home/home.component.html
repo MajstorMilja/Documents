@@ -1,0 +1,80 @@
+<div class="logIn">
+    <p class="time-role">Trenutno vreme: {{currentDate | date:'yyyy-MM-dd'}} | vasa rola: // role //</p>
+    <p class="hello-user">Hello user // naziv // </p>
+</div>
+<div class="Filtering" *ngIf="dokumentBool">
+
+    <mat-form-field class="FilterInputs">
+        <mat-label>Klijent</mat-label>
+        <input type="text" placeholder="Pick klijent" aria-label="Number" matInput 
+               [matAutocomplete]="auto"  [formControl]="myControl" (input)="CheckInput(inputValue)" [(ngModel)]="inputValue">
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let option of filteredOptions | async" [value]="option.naziv" (onSelectionChange)="onKlijentSelected(option)">
+            {{ option.naziv }}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+      
+        
+    <mat-form-field class="FilterInputs">
+        <mat-label>tipDokumenta</mat-label>
+        <mat-select matNativeControl (selectionChange)="onSelectedProduct($event.value)">
+            <mat-option [value]="0">Svi tipovi</mat-option>
+            <mat-option *ngFor="let tip of tip" [value]="tip.tipDokumentaId">
+                {{ tip.naziv }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="FilterInputs" formControlName="datum">
+        <mat-label>datum</mat-label>
+        <input matInput [matDatepicker]="datum" (dateChange)="onDateSelected($event)" >
+        <mat-hint>Mesec/Dan/Godina</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="datum"></mat-datepicker-toggle>
+        <mat-datepicker #datum></mat-datepicker>
+    </mat-form-field>
+    
+</div>
+
+<div class="ContainerDiv">
+    <div class="button-container">
+        <button class="btn" (click)="klijentButton()">
+            klijent
+        </button>
+        <button class="btn" (click)="dokumentButton()">
+            dokument
+        </button>
+        <button class="btn" (click)="NewDokumentButton()">
+            novi dokument
+        </button>
+        <button class="btn" (click)="NewKlijentButton()">
+           novi klijent
+        </button>
+    </div>
+    <div *ngIf="klijentBool">
+        <app-klijent></app-klijent>
+    </div>
+
+    <div *ngIf="dokumentBool" class="dokument">
+        <app-dokumenti [receivedTipId]="tipId" [receivedDate]="datum" [receivedKlijent]="selectedKlijent"></app-dokumenti>
+    </div>
+
+    <div *ngIf="NewDockBool">
+        <app-add-new-dokument></app-add-new-dokument>
+    </div>
+
+    <div *ngIf="NewKlijent">
+        <app-add-new-klijent></app-add-new-klijent>
+    </div>
+    <div *ngIf="defaultBool">
+        <h1 class="naslov">Neki naslov sajta</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam architecto minima, odio ut voluptatibus
+            provident mollitia accusantium laboriosam optio et unde! Officia voluptatum iste quis dolore perferendis
+            nostrum voluptatibus maiores!</p>
+        <p>--Klijent dugme ce nam prikazati sve klijente mozemo kliknuti na klijenta da vidimo sve njegove dokuemnte</p>
+        <p>--dokumente dugme ce nam pokazati sve dokumente ,mozemo kliknemo na odredjeni dokument da nam prikaze sve
+            stvake tog dokumenta , i tu mozemo editujemo i dodamo jos stavki</p>
+    </div>
+
+
+</div>

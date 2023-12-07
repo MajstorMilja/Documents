@@ -1,0 +1,24 @@
+.formField {
+    display: block;
+    width: 250px;
+    height: 15%;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.forma {
+    position: absolute;
+    left: 40%;
+    top: 15%;
+    border: 1px solid black;
+    box-shadow: 10px 5px 10px 5px rgb(220, 220, 220);
+}
+
+.Top {
+    margin-top: 22px;
+}
+
+.Bottom {
+    margin-bottom: 22px;
+}
