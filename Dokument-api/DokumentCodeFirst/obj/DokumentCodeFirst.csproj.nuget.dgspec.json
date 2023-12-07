@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MajstorMilja\\source\\repos\\DokumentCodeFirst\\DokumentCodeFirst\\DokumentCodeFirst.csproj": {}
+    "C:\\Users\\milja\\OneDrive\\Desktop\\programiranje\\Documents\\Dokument-api\\DokumentCodeFirst\\DokumentCodeFirst.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MajstorMilja\\source\\repos\\DokumentCodeFirst\\DokumentCodeFirst\\DokumentCodeFirst.csproj": {
+    "C:\\Users\\milja\\OneDrive\\Desktop\\programiranje\\Documents\\Dokument-api\\DokumentCodeFirst\\DokumentCodeFirst.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MajstorMilja\\source\\repos\\DokumentCodeFirst\\DokumentCodeFirst\\DokumentCodeFirst.csproj",
+        "projectUniqueName": "C:\\Users\\milja\\OneDrive\\Desktop\\programiranje\\Documents\\Dokument-api\\DokumentCodeFirst\\DokumentCodeFirst.csproj",
         "projectName": "DokumentCodeFirst",
-        "projectPath": "C:\\Users\\MajstorMilja\\source\\repos\\DokumentCodeFirst\\DokumentCodeFirst\\DokumentCodeFirst.csproj",
-        "packagesPath": "C:\\Users\\MajstorMilja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MajstorMilja\\source\\repos\\DokumentCodeFirst\\DokumentCodeFirst\\obj\\",
+        "projectPath": "C:\\Users\\milja\\OneDrive\\Desktop\\programiranje\\Documents\\Dokument-api\\DokumentCodeFirst\\DokumentCodeFirst.csproj",
+        "packagesPath": "C:\\Users\\milja\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\milja\\OneDrive\\Desktop\\programiranje\\Documents\\Dokument-api\\DokumentCodeFirst\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MajstorMilja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\milja\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
